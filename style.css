@@ -1,0 +1,229 @@
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+* {
+     font-family: "Roboto Condensed", Tahoma;
+     margin: 0 auto;
+}
+header {
+    background-color: #0071bd;
+}
+.logo {
+    width: 110px;
+    height: 55px;
+    margin: 0;
+}
+nav {
+    margin:0;
+    padding: 20px 0px;
+    background-color: #7071DB;
+    
+}
+main,
+.paticka_obal,
+.hlavicka_obal {
+    max-width: 1200px;
+    width: 90%;
+    height: max-content;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 0 auto;
+    padding: 20px 0;
+    gap: 20px;
+    color: white;   
+    font-size: 20px;
+}
+.hlavicka_obal {
+    align-items: center;
+}
+footer {
+    background-color: #662e91;
+    margin:0;
+    padding:0;
+}
+.obsah_vlevo {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 4;
+    margin:0;
+}
+.obsah_vpravo {
+    background-color: #01a89e;
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    height: fill;
+    min-height: 150px;
+}
+.obal_mrizky {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    padding: 0 0 20px 0;
+}
+.ctyr_box {
+    background-color: #fbb03b;
+    border: 5px solid #fbb03b;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    height: 200px;
+    flex-grow: 1;
+}
+.ctyr_box_tmava {
+    background-color: #fbb03b;
+    border: 5px solid #dd7917;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    height: 200px;
+    flex-grow: 1;
+    color: #dd7917;
+}
+.troj_box {
+    background-color: #f15a25;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    height: 200px;
+    flex-grow: 1;
+}
+.dvoj_box {
+    background-color: #c2272d;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    height: 200px;
+    flex-grow: 1;
+}
+.kolo {
+    position: relative;
+    margin: 0px;
+    top: -42%;
+    right: 4%;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #ffffff;
+}
+.paticka_vlevo {
+    margin:0;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 2;
+    gap: 20px;
+}
+.paticka_vpravo {
+    margin:0;
+    padding: 0;
+    display: flex;
+    flex-grow: 1;
+}
+.paticka_tri {
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    align-items: center;
+    height: 125px;
+    flex-grow: 1;
+}
+.ctyr_box:hover,
+.troj_box:hover,
+.dvoj_box:hover,
+.ctyr_box_tmava:hover,
+.vpravo:hover,
+nav a:hover {
+    text-decoration: underline;
+}
+.paticka_tri:hover {
+    text-decoration: underline;
+    background-color:red;    
+    transition-duration:2s;
+}
+ul {
+    padding: 0;
+}
+li {
+    display: inline;
+    list-style-type: none;
+    padding: 20px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+a.hamburger {
+    display: none;
+    margin: 0;
+}
+.hamburger_obal{
+    background-color: #7071DB;
+    padding: 8px 20px;
+}
+.hamburger_obal div{
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    display: block;
+    font-size: 16px;
+}
+.hamburger_obal:hover {
+    background-color: #dd7917;
+}
+@media screen and (max-width: 960px) {
+    ul {
+        display: none;
+    }
+    a.hamburger {
+        display: block;
+    }
+    .hlavicka_obal {
+        width: 90%;
+    }
+    main {
+        flex-direction: column;
+        width: 90%;
+        gap: 0px;
+    }
+    .obsah_vlevo {
+        margin:0;
+        flex-wrap: wrap;
+    }
+    .obsah_vpravo {
+        width: 100%;
+    }
+    .obal_mrizky {    
+        flex-wrap: wrap;
+        width: 100%;
+    }  
+    .ctyr_box {
+        width: 45%;        
+    }
+    .ctyr_box_tmava {
+        width: 45%;
+    }
+    .paticka_obal{
+            flex-direction: column;
+            width: 90%;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .obal_mrizky {
+        flex-direction: column;
+    }  
+    .ctyr_box,
+    .dvoj_box,
+    .troj_box, 
+    .ctyr_box_tmava,
+    .paticka_tri {
+        width: 100%;
+        height: 80px;       
+    }
+    .paticka_vlevo {
+        flex-direction: column;
+    }
+}
